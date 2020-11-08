@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity2"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Custom_ListView.Custom_ListView"></activity>
+        <activity android:name=".databinding.Kotlin_Activity6" />
+        <activity android:name=".Kotlin_Activity5_2" />
+        <activity android:name=".Kotlin_Activity5" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".Custom_RecyclerView_D.Custom_RecyclerView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
