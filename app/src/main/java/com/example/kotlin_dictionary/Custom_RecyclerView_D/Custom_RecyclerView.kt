@@ -31,7 +31,7 @@ class Custom_RecyclerView : AppCompatActivity() {
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         // 29버전에선 LinearLayoutManager를 지원하지않아 마이그레이션 했음, 위 작업을 통해 드레그가 가능하게됨(마치 스크롤 뷰에 리니어 레이아웃을 생성한 것과 같음)
-        recyclerView.adapter = CustomAdapter_RecyclerVIew(DataList_r)
+        recyclerView.adapter = CustomAdapter_RecyclerVIew(DataList_r, this)
         //listView와 동일하게 커스텀 어댑터가 필요
 
     }

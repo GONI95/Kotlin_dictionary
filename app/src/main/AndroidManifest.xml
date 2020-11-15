@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kotlin_dictionary">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +13,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Custom_ListView.Custom_ListView"></activity>
+        <activity android:name=".progressbar.ProgressBar"></activity>
+        <activity android:name=".mycalendarview.Mycalendarview" />
+        <activity android:name=".web_videoview.Video" /> <!-- <activity android:name=".web_calendar_videoview.Video"></activity> -->
+        <activity android:name=".web_videoview.WebView" />
+        <activity android:name=".Tablayout.Tablayout" />
+        <activity android:name=".widjet_set.Widjet_set" />
+        <activity android:name=".bottomnavigation.Bottomnavigation" />
+        <activity android:name=".Custom_RecyclerView_D.Custom_RecyclerView" />
+        <activity android:name=".Custom_ListView.Custom_ListView" />
         <activity android:name=".databinding.Kotlin_Activity6" />
-        <activity android:name=".Kotlin_Activity5_2" />
-        <activity android:name=".Kotlin_Activity5" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".Custom_RecyclerView_D.Custom_RecyclerView">
+        <activity android:name=".navigation.NavigationView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

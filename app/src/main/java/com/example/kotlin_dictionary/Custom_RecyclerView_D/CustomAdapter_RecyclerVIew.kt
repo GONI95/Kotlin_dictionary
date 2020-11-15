@@ -1,8 +1,10 @@
 package com.example.kotlin_dictionary.Custom_RecyclerView_D
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlin_dictionary.R
 import kotlinx.android.synthetic.main.list_recycler_view_sample.view.*
@@ -16,11 +18,13 @@ class CustomViewHolder(v : View) : RecyclerView.ViewHolder(v) {
     val name = v.listview_textview
 }
 
-class CustomAdapter_RecyclerVIew(val DataList_r : ArrayList<Data_r>) : RecyclerView.Adapter<CustomViewHolder>(){
+//class CustomAdapter_RecyclerVIew(val DataList_r : ArrayList<Data_r>, val context : Context)에서 context를 매개변수로 받지않으면,
+// 아래의 context를 parent.context와 리스터에서 v -> 로 뷰를 콜백하여 v.context로 작성해야함
+class CustomAdapter_RecyclerVIew(val DataList_r : ArrayList<Data_r>, val context : Context) : RecyclerView.Adapter<CustomViewHolder>(){
     // 하나의 list를 표현하는 레이아웃을 activity_custom_recycler_view.xml에 view로 만들어 넣어주어야해서 어댑터가 필요함, 상속받음
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
-        val cellForRow = LayoutInflater.from(parent.context).inflate(R.layout.list_recycler_view_sample, parent, false)
+        val cellForRow = LayoutInflater.from(context).inflate(R.layout.list_recycler_view_sample, parent, false)
         // LayoutInflater이 레이아웃을 parent.context로 부터 팽창하는데, inflate로 list_recycler_view_sample를 view로 변환해 팽창함
 
         return CustomViewHolder(cellForRow)
@@ -32,6 +36,10 @@ class CustomAdapter_RecyclerVIew(val DataList_r : ArrayList<Data_r>) : RecyclerV
         holder.profile.setImageResource(DataList_r[position].profile)
         //뒤의 prifile은 Data 클래스에서 매개변수로 받은 int형의 프로필 값의 데이터리스트의 위치
         holder.name.text = DataList_r[position].name
+
+        holder.itemView.setOnClickListener{
+            Toast.makeText(context, DataList_r[position].name, Toast.LENGTH_SHORT).show()
+        }
 
     }
 
