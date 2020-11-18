@@ -1,10 +1,12 @@
 package com.example.kotlin_dictionary.web_videoview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebViewClient
 import com.example.kotlin_dictionary.R
+import kotlinx.android.synthetic.main.activity_tablayout.*
 import kotlinx.android.synthetic.main.activity_web_view.*
 
 class WebView : AppCompatActivity() {
@@ -17,8 +19,7 @@ class WebView : AppCompatActivity() {
         webview.webViewClient = WebViewClient()
         //새로운 버튼 눌렀을 때 새로운 창을 방지는 기능
 
-        Load(googlebutton)
-
+        Load(netflixbutton)
     }
     override fun onBackPressed() {
         if(webview.canGoBack()) webview.goBack()
@@ -34,8 +35,8 @@ class WebView : AppCompatActivity() {
 
     fun Load(view: View) {
         when(view.id){
-           R.id.googlebutton -> webview.loadUrl("https://www.google.com/")
-            R.id.naverbutton -> webview.loadUrl("https://m.naver.com/")
+           R.id.netflixbutton -> webview.loadUrl("https://www.google.com/")
+            R.id.naverbutton -> webview.loadUrl("https://naver.com/")
             //매니페스트 파일에서 인터넷 퍼미션 작업해주어야함
         }
     }

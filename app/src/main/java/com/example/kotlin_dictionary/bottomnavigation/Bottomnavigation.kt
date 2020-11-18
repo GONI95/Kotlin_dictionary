@@ -1,13 +1,17 @@
 package com.example.kotlin_dictionary.bottomnavigation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
+import com.example.kotlin_dictionary.Custom_RecyclerView_D.Custom_RecyclerView
 import com.example.kotlin_dictionary.R
+import com.example.kotlin_dictionary.widjet_set.Widjet_set
 import kotlinx.android.synthetic.main.activity_bottomnavigation.*
+import kotlinx.android.synthetic.main.activity_custom__list_view.*
 import kotlinx.android.synthetic.main.activity_tablayout.*
 
 

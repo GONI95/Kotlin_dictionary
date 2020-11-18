@@ -1,11 +1,14 @@
 package com.example.kotlin_dictionary.Custom_RecyclerView_D
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kotlin_dictionary.Custom_ListView.Data
 import com.example.kotlin_dictionary.R
+import com.example.kotlin_dictionary.bottomnavigation.Bottomnavigation
+import kotlinx.android.synthetic.main.activity_custom__list_view.*
 import kotlinx.android.synthetic.main.activity_custom__recycler_view.*
 
 class Custom_RecyclerView : AppCompatActivity() {

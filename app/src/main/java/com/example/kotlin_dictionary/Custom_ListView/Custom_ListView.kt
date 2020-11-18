@@ -1,11 +1,14 @@
 package com.example.kotlin_dictionary.Custom_ListView
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.Toast
+import com.example.kotlin_dictionary.Custom_RecyclerView_D.Custom_RecyclerView
 import com.example.kotlin_dictionary.R
 import kotlinx.android.synthetic.main.activity_custom__list_view.*
+import kotlinx.android.synthetic.main.activity_kotlin_6.*
 
 class Custom_ListView : AppCompatActivity() {
 
@@ -31,6 +34,5 @@ class Custom_ListView : AppCompatActivity() {
             val selectItem = parent.getItemAtPosition(position) as Data
             Toast.makeText(this, selectItem.name, Toast.LENGTH_SHORT).show()
         }
-
     }
 }

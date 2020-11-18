@@ -1,9 +1,14 @@
 package com.example.kotlin_dictionary.databinding
 
+import android.app.IntentService
+import android.content.Intent
+import android.content.IntentFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.example.kotlin_dictionary.Custom_ListView.Custom_ListView
 import com.example.kotlin_dictionary.R
+import kotlinx.android.synthetic.main.activity_kotlin_6.*
 
 class Kotlin_Activity6 : AppCompatActivity(){
     private lateinit var binding : ActivityKotlin6Binding

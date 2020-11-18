@@ -4,4 +4,9 @@
     <string name="page2">page2</string>
     <string name="page3">page3</string>
 
+    <string-array name="key">
+        <item>name</item>
+        <item>key</item>
+    </string-array>
+
 </resources>

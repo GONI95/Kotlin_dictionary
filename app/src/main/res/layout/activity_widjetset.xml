@@ -88,6 +88,5 @@
         android:clickable="true"
         android:src="@drawable/ic_android" />
 
-
 </LinearLayout>
 <!-- thumb : 버튼 / track : 틀 -->

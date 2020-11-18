@@ -1,6 +1,7 @@
 package com.example.kotlin_dictionary.navigation
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.os.VibrationEffect
 import android.os.Vibrator
@@ -12,12 +13,14 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.kotlin_dictionary.AudioManager_VolumeUpDouwn.Volume_UpDown
 import com.example.kotlin_dictionary.R
 import com.example.kotlin_dictionary.Tablayout.Fragment_page1
 import com.example.kotlin_dictionary.Tablayout.Fragment_page2
 import com.example.kotlin_dictionary.Tablayout.Fragment_page3
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_navigationview.*
+import kotlinx.android.synthetic.main.activity_progressbar.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 // https://bongcando.tistory.com/4
@@ -34,7 +37,6 @@ class NavigationView : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
         main_navigationView.setNavigationItemSelectedListener(this@NavigationView) //navigation 리스너
         Vibrator(1000L)
-
     }
 
     private fun Vibrator(l: Long) {

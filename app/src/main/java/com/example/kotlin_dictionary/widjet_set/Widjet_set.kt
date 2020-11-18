@@ -1,10 +1,14 @@
 package com.example.kotlin_dictionary.widjet_set
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.kotlin_dictionary.R
+import com.example.kotlin_dictionary.Tablayout.Tablayout
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_bottomnavigation.*
+import kotlinx.android.synthetic.main.activity_tablayout.*
 import kotlinx.android.synthetic.main.activity_widjetset.*
 
 class Widjet_set : AppCompatActivity() {
@@ -83,6 +87,5 @@ class Widjet_set : AppCompatActivity() {
             Snackbar.make(view, "나는 스낵바!", Snackbar.LENGTH_SHORT).show()
         }*/
         // ===================================================================
-
     }
 }

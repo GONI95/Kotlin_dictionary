@@ -10,25 +10,35 @@
 
     </data>
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".databinding.Kotlin_Activity6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".databinding.Kotlin_Activity6">
 
-    <TextView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@{userdata.name}"/>
-    <TextView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@{userdata.name1}"/>
-    <TextView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@{userdata.name2}"/>
-    <TextView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@{userdata.name3}"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@{userdata.name}" />
 
-</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@{userdata.name1}" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@{userdata.name2}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@{userdata.name3}" />
+
+    </LinearLayout>
 </layout>

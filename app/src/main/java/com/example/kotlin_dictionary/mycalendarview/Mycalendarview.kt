@@ -1,10 +1,14 @@
 package com.example.kotlin_dictionary.mycalendarview
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlin_dictionary.R
+import com.example.kotlin_dictionary.progressbar.ProgressBar
+import com.example.kotlin_dictionary.web_videoview.Video
 import kotlinx.android.synthetic.main.activity_mycalendarview.*
+import kotlinx.android.synthetic.main.activity_web_view.*
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.time.days
@@ -32,7 +36,5 @@ class Mycalendarview : AppCompatActivity() {
         calendarView.setDate(calendar.timeInMillis) // set() 한 값을 뷰에 넣음
         println(calendar[Calendar.YEAR])
         println(calendar[Calendar.MONTH])
-
     }
-
 }

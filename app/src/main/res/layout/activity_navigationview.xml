@@ -16,15 +16,17 @@ android:fitsSystemWindows="true">
     android:layout_height="match_parent"
     layout="@layout/main_layout" />-->
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_weight="9"
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <!--툴바만 따로 넣어봤음-->
-    <include layout="@layout/toolbar"/>
+            <!--툴바만 따로 넣어봤음-->
+            <include layout="@layout/toolbar"/>
 
-</FrameLayout>
+        </FrameLayout>
+
 
 <!--자식 레이아웃. Navigation Drawer-->
 <com.google.android.material.navigation.NavigationView
@@ -36,4 +38,5 @@ android:fitsSystemWindows="true">
     app:menu="@menu/viewpager_menu">
 
 </com.google.android.material.navigation.NavigationView>
+
 </androidx.drawerlayout.widget.DrawerLayout>

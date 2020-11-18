@@ -1,10 +1,13 @@
 package com.example.kotlin_dictionary.web_videoview
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.MediaController
 import com.example.kotlin_dictionary.R
+import com.example.kotlin_dictionary.mycalendarview.Mycalendarview
+import kotlinx.android.synthetic.main.activity_mycalendarview.*
 import kotlinx.android.synthetic.main.activity_video.*
 
 class Video : AppCompatActivity() {

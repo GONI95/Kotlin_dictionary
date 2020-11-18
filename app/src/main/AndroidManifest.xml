@@ -3,7 +3,6 @@
     package="com.example.kotlin_dictionary">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -13,7 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".progressbar.ProgressBar"></activity>
+        <activity android:name=".Sensor_Ex.Sensor_EX"></activity>
+        <activity android:name=".SharedPreference.SharedPreference" />
+        <activity android:name=".pushAlarm.PushAlarm" />
+        <activity android:name=".databinding.Kotlin_Activity6" />
+        <activity android:name=".AudioManager_VolumeUpDouwn.Volume_UpDown" />
+        <activity android:name=".navigation.NavigationView" />
+        <activity android:name=".progressbar.ProgressBar" />
         <activity android:name=".mycalendarview.Mycalendarview" />
         <activity android:name=".web_videoview.Video" /> <!-- <activity android:name=".web_calendar_videoview.Video"></activity> -->
         <activity android:name=".web_videoview.WebView" />
@@ -22,8 +27,7 @@
         <activity android:name=".bottomnavigation.Bottomnavigation" />
         <activity android:name=".Custom_RecyclerView_D.Custom_RecyclerView" />
         <activity android:name=".Custom_ListView.Custom_ListView" />
-        <activity android:name=".databinding.Kotlin_Activity6" />
-        <activity android:name=".navigation.NavigationView">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

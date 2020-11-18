@@ -1,13 +1,16 @@
 package com.example.kotlin_dictionary.Tablayout
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import com.example.kotlin_dictionary.R
+import com.example.kotlin_dictionary.web_videoview.WebView
 import kotlinx.android.synthetic.main.activity_bottomnavigation.*
 import kotlinx.android.synthetic.main.activity_tablayout.*
+import kotlinx.android.synthetic.main.activity_widjetset.*
 
 class Tablayout : AppCompatActivity() {
 
@@ -32,6 +35,7 @@ class Tablayout : AppCompatActivity() {
         tabLayout.getTabAt(0)?.setIcon(R.drawable.ic_android)
         tabLayout.getTabAt(1)?.setIcon(R.drawable.ic_android)
         tabLayout.getTabAt(2)?.setIcon(R.drawable.ic_android)
+
     }
     inner class pagerAdapter : PagerAdapter() {
         override fun getCount(): Int = viewList.size

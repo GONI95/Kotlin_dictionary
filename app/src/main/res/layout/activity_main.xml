@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_12" />
+
+    <Button
+        android:id="@+id/nextButton_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sensor"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintStart_toEndOf="@+id/nextButton_13"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_11" />
+
+    <Button
+        android:id="@+id/nextbutton_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton_3"
+        app:layout_constraintStart_toEndOf="@+id/nextbutton_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Nabigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Widjet set"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextbutton_1" />
+
+    <Button
+        android:id="@+id/nextButton_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tablayout"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton_6"
+        app:layout_constraintStart_toEndOf="@+id/nextButton_4"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_2" />
+
+    <Button
+        android:id="@+id/nextButton_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Web View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_3" />
+
+    <Button
+        android:id="@+id/nextButton_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Video View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_4" />
+
+    <Button
+        android:id="@+id/nextButton_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Calendar View"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton_9"
+        app:layout_constraintStart_toEndOf="@+id/nextButton_7"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_5" />
+
+    <Button
+        android:id="@+id/nextButton_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Progress Bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_6" />
+
+    <Button
+        android:id="@+id/nextButton_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Navigation View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_7" />
+
+    <Button
+        android:id="@+id/nextButton_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Volume up down"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton_12"
+        app:layout_constraintStart_toEndOf="@+id/nextButton_10"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_8" />
+
+    <Button
+        android:id="@+id/nextButton_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="PushAlarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_9" />
+
+    <Button
+        android:id="@+id/nextButton_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="SharedPreferences"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_10" />
+</androidx.constraintlayout.widget.ConstraintLayout>
