@@ -31,15 +31,15 @@ class Network_Check : AppCompatActivity() {
         var wifi_state = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).isConnected
 
         if(connectivityManager.activeNetworkInfo?.isConnected == null){
-            println("와이파이, 모바일 데이터가 꺼져있습니다.")
+            println("와이파이, 모바일 데이터가 꺼져있습니다. ")
             intent = Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS)
             startActivity(intent)
         } else if(wifi_state == false and mobile_data_state == true){
-            println("와이파이가 꺼져있습니다.")
+            println("와이파이가 꺼져있습니다. ")
             intent = Intent(android.provider.Settings.ACTION_WIFI_SETTINGS)
             startActivity(intent)
         } else if(mobile_data_state == false and wifi_state == true){
-            println("모바일 데이터가 꺼져있습니다.")
+            println("모바일 데이터가 꺼져있습니다. ")
             intent = Intent(android.provider.Settings.ACTION_DATA_USAGE_SETTINGS)
             startActivity(intent)
         }
