@@ -13,6 +13,7 @@ import com.example.kotlin_dictionary.Tablayout.Tablayout
 import com.example.kotlin_dictionary.bottomnavigation.Bottomnavigation
 import com.example.kotlin_dictionary.mycalendarview.Mycalendarview
 import com.example.kotlin_dictionary.navigation.NavigationView
+import com.example.kotlin_dictionary.network_check.Network_Check
 import com.example.kotlin_dictionary.progressbar.ProgressBar
 import com.example.kotlin_dictionary.pushAlarm.PushAlarm
 import com.example.kotlin_dictionary.web_videoview.Video
@@ -99,6 +100,11 @@ class MainActivity : AppCompatActivity() {
 
         nextButton_14.setOnClickListener {
             val intent = Intent(this, Sensor_EX::class.java)
+            startActivity(intent)
+        }
+
+        nextButton_15.setOnClickListener {
+            val intent = Intent(this, Network_Check::class.java)
             startActivity(intent)
         }
 

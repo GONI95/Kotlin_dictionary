@@ -18,6 +18,7 @@ class Sensor_EX : AppCompatActivity(), SensorEventListener {
 
     // https://developer.android.com/guide/topics/sensors/sensors_motion?hl=ko
     override fun onSensorChanged(event: SensorEvent?) {
+        // 센서의 값이 바뀌면 값을 출력
         val x = event?.values?.get(0) as Float
         val y = event?.values?.get(1) as Float
         val z = event?.values?.get(2) as Float
@@ -25,7 +26,10 @@ class Sensor_EX : AppCompatActivity(), SensorEventListener {
         println(x.toString() + ", " + y.toString() + ", " + z.toString())
     }
 
-    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {}
+    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+        //accuracy -> 갯수(자이로스코프의 경우 x,y,z 3개)
+        //sensor -> 센서의 종류
+    }
 
     override fun onResume() {
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
@@ -36,6 +40,9 @@ class Sensor_EX : AppCompatActivity(), SensorEventListener {
 
     override fun onPause() {
         sensorManager.unregisterListener(this)
+        //어플이 가려지면 자원을 낭비를 막기위해 센서를 꺼지도록 함
         super.onPause()
     }
+
+    
 }

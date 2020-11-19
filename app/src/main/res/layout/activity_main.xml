@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/nextButton_15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="Network Check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nextButton_12" />
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Sensor"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton_15"
         app:layout_constraintStart_toEndOf="@+id/nextButton_13"
         app:layout_constraintTop_toBottomOf="@+id/nextButton_11" />
 
@@ -142,4 +142,32 @@
         android:text="SharedPreferences"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nextButton_10" />
+
+    <Button
+        android:id="@+id/nextButton_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_13" />
+
+    <Button
+        android:id="@+id/nextButton_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton_18"
+        app:layout_constraintStart_toEndOf="@+id/nextButton_16"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_14" />
+
+    <Button
+        android:id="@+id/nextButton_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton_15" />
 </androidx.constraintlayout.widget.ConstraintLayout>

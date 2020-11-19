@@ -3,6 +3,8 @@
     package="com.example.kotlin_dictionary">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -12,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sensor_Ex.Sensor_EX"></activity>
+        <activity android:name=".network_check.Network_Check"></activity>
+        <activity android:name=".Sensor_Ex.Sensor_EX" />
         <activity android:name=".SharedPreference.SharedPreference" />
         <activity android:name=".pushAlarm.PushAlarm" />
         <activity android:name=".databinding.Kotlin_Activity6" />
