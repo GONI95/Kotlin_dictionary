@@ -3,10 +3,12 @@ package com.example.kotlin_dictionary
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import com.example.kotlin_dictionary.AlertDialog.AlertDialog_Ex
+import com.example.kotlin_dictionary.Animation_and_Ninepatch.Animation_Button
 import com.example.kotlin_dictionary.AudioManager_VolumeUpDouwn.Volume_UpDown
 import com.example.kotlin_dictionary.Custom_ListView.Custom_ListView
 import com.example.kotlin_dictionary.Custom_RecyclerView_D.Custom_RecyclerView
+import com.example.kotlin_dictionary.Intent_Ex.Intent_Ex
 import com.example.kotlin_dictionary.Sensor_Ex.Sensor_EX
 import com.example.kotlin_dictionary.SharedPreference.SharedPreference
 import com.example.kotlin_dictionary.Tablayout.Tablayout
@@ -19,14 +21,8 @@ import com.example.kotlin_dictionary.pushAlarm.PushAlarm
 import com.example.kotlin_dictionary.web_videoview.Video
 import com.example.kotlin_dictionary.web_videoview.WebView
 import com.example.kotlin_dictionary.widjet_set.Widjet_set
-import kotlinx.android.synthetic.main.activity_bottomnavigation.*
-import kotlinx.android.synthetic.main.activity_custom__list_view.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.nextButton_2
-import kotlinx.android.synthetic.main.activity_mycalendarview.*
-import kotlinx.android.synthetic.main.activity_navigationview.*
-import kotlinx.android.synthetic.main.activity_tablayout.*
-import kotlinx.android.synthetic.main.activity_web_view.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -108,5 +104,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        nextButton_16.setOnClickListener {
+            val intent = Intent(this, AlertDialog_Ex::class.java)
+            startActivity(intent)
+        }
+
+        nextButton_17.setOnClickListener {
+            val intent = Intent(this,  Intent_Ex::class.java)
+            startActivity(intent)
+        }
+
+        nextButton_18.setOnClickListener {
+            val intent = Intent(this,  Animation_Button::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil.setContentView
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import com.example.kotlin_dictionary.R
 
 class Fragment_page1 : Fragment() {
+    private lateinit var callback: OnBackPressedCallback
 
     companion object {
         fun newInstance(): Fragment {

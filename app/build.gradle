@@ -7,6 +7,12 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
+    // 넣어주어야 @Parcelize annotation 사용가능
+    androidExtensions {
+        experimental = true
+    }
+
+
     defaultConfig {
         applicationId "com.example.kotlin_dictionary"
         minSdkVersion 14
@@ -45,5 +51,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.material:material:1.0.0' // NavigationView
     implementation 'androidx.legacy:legacy-support-v4:1.0.0' // DrawerLayout
+
+    implementation 'com.github.gayanvoice:android-animations-kotlin:1.0.1'  // 애니메이션
 
 }
